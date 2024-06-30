@@ -13,4 +13,4 @@ RUN mkdir staticfiles
 
 COPY . /app
 
-ENTRYPOINT ["gunicorn", "API_TWO.wsgi", "-b", "0.0.0.0:8000"]
+ENTRYPOINT ["gunicorn", "API_JSON.wsgi", "-b", "0.0.0.0:8000"]
