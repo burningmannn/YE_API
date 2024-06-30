@@ -1,0 +1,24 @@
+# Django
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media/
+*.log
+
+.env
+
+# Virtual environment
+venv/
+
+# Editor directories and files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.idea/
+*.swp
+*.swo
+
+# Other
+.DS_Store
+staticfiles/
