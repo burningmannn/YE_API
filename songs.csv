@@ -1,0 +1,7 @@
+"id","name","image","URL_image","artist","favorite","fileName","URL_music","album_id",
+"1","Body And Attitude","2","","DJ Freedem",False,"Body And Attitude - DJ Freedem","","1"
+"2","A Simple Feeling","4","","Alge",False,"A Simple Feeling - Alge","","2"
+"3","Illusions","dark","","Anno Domini Beats",True,"Illusions - Anno Domini Beats","","2"
+"4","Shadows","4","","Anno Domini Beats",False,"Shadows - Anno Domini Beats","","2"
+"5","Feeling's Not Mutual","1","","Single Friend",True,"Feeling's Not Mutual - Single Friend","","3"
+"6","Kalimba","dramatic","","Cxdy",True,"Kalimba - Cxdy","","3"
