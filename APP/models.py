@@ -18,7 +18,6 @@ class Song(models.Model):
     image = models.CharField(max_length=255)
     URL_image = models.CharField(max_length=255)
     artist = models.CharField(max_length=255)
-    favorite = models.BooleanField(default=False)
     fileName = models.CharField(max_length=255)
     URL_music = models.CharField(max_length=255)
     album = models.ForeignKey(Album, on_delete=models.CASCADE, related_name='songs')

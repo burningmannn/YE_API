@@ -6,7 +6,6 @@ from .serializers import AlbumSerializer, SongSerializer
 def get_song(request):
     songs = Song.objects.select_related('album').all()
     albums = {}
-    favorites = {'name': 'Favorites', 'image': 'favorite', 'URL_image': '', 'songs': []}
 
     for song in songs:
         album_name = song.album.name
@@ -18,9 +17,5 @@ def get_song(request):
 
         albums[album_name]['songs'].append(SongSerializer(song).data)
 
-        if song.favorite:
-            favorites['songs'].append(SongSerializer(song).data)
-
-    albums['Favorites'] = favorites
     serializer = AlbumSerializer(albums.values(), many=True)
     return JsonResponse(serializer.data, safe=False)
